@@ -27,17 +27,9 @@ int main() {
         sleep(1);
         printf(" 5 ");
         sleep(1);
-        system(" dir ");
-
-
-    } else{
+        system(" reboot ");
+} else{
 
         printf("thanks you.");
     }
-
-
-
-
-
-
-    return 0;}
+ return 0;}
